@@ -137,7 +137,12 @@ function doTheToDo(todosCollection)
             deleteTask(todosCollection,args[0]);
             break;
         case 'default':
-            console.log('##### MONGO DB - LISTA TO DO - CRUD');
+            console.log(`##### MONGO DB - LISTA TO DO - CRUD
+            Lista dostępnych komend:
+            add <nazwa adania> - dodaje zadania do listy
+            list - wyświetla zadania
+            done <id zadania> - oznacza zadania jako zakończone
+            deleta <id zadania> - usuwa zadanie z bazy danych`);
             client.close();
             break;
     };
